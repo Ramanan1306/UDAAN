@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background_bg"
+    android:orientation="vertical"
+    android:weightSum="9"
+    android:layout_height="match_parent"
+    tools:context=".dopage">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/header_bg"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DO 's"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="examples"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="100dp">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gifImageView"
+            android:layout_height="200dp"
+            android:layout_width="match_parent"
+            android:src="@drawable/dogif"
+            android:layout_marginTop="10dp"/>
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scroller"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:background="@color/cv1"
+                android:layout_width="250dp"
+                android:layout_height="300dp"
+                android:layout_marginStart="15.4dp"
+                android:layout_marginLeft="15.4dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="30dp"
+                android:elevation="0dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15.4dp"
+                        android:layout_marginLeft="15.4dp"
+                        android:layout_marginTop="15.4dp"
+                        android:lineSpacingExtra="2.8sp"
+                        android:text="WASHING HANDS"
+                        android:textColor="@color/black"
+                        android:textScaleX="1.2"
+                        android:textSize="23dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15.4dp"
+                        android:layout_marginTop="15.4dp"
+                        android:layout_marginRight="15.4dp"
+                        android:lineSpacingExtra="2.6sp"
+                        android:text="Wash hands or use alcohol-based handrub before enteringand when leaving the patient's room"
+                        android:textColor="#8f8f8f"
+                        android:textSize="20dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15.4dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/handwash" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="250dp"
+                android:layout_height="300dp"
+                android:layout_marginStart="15.4dp"
+                android:layout_marginLeft="15.4dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="30dp"
+                android:elevation="0dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="23dp"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="15.4dp"
+                        android:layout_marginTop="15.4dp"
+                        android:lineSpacingExtra="2.8sp"
+                        android:text="LISTEN INSTRUCTION"
+                        android:textStyle="bold"
+                        android:textScaleX="1.2"
+                        android:layout_marginStart="15.4dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textColor="@color/overlay_dark_30"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15.4dp"
+                        android:layout_marginRight="15.4dp"
+                        android:layout_marginTop="15.4dp"
+                        android:lineSpacingExtra="2.6sp"
+                        android:text="Listen to healthcare worker instruction at all times"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="15.4dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/listening" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="250dp"
+                android:layout_height="300dp"
+                android:layout_marginStart="15.4dp"
+                android:layout_marginLeft="15.4dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="30dp"
+                android:elevation="0dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="23dp"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="15.4dp"
+                        android:layout_marginTop="15.4dp"
+                        android:lineSpacingExtra="2.8sp"
+                        android:text="SOCIAL DISTANCING"
+                        android:layout_marginStart="15.4dp"
+                        android:textStyle="bold"
+                        android:scaleX="1"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textColor="#8f8f8f"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15.4dp"
+                        android:layout_marginRight="15.4dp"
+                        android:layout_marginTop="15.4dp"
+                        android:lineSpacingExtra="2.6sp"
+                        android:text="Keep at least 2m physical distance between yourself and the patient"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15.4dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/distancing"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="250dp"
+                android:layout_height="300dp"
+                android:layout_marginStart="15.4dp"
+                android:layout_marginLeft="15.4dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="30dp"
+                android:elevation="0dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="23dp"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="15.4dp"
+                        android:layout_marginTop="15.4dp"
+                        android:lineSpacingExtra="2.8sp"
+                        android:text="GREETING"
+                        android:textStyle="bold"
+                        android:textScaleX="1.2"
+                        android:layout_marginStart="15.4dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textColor="@color/overlay_dark_30"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15.4dp"
+                        android:layout_marginRight="15.4dp"
+                        android:layout_marginTop="15.4dp"
+                        android:lineSpacingExtra="2.6sp"
+                        android:text="Use an alternative, non-touch greeting"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="15.4dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/greeting" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="250dp"
+                android:layout_height="300dp"
+                android:layout_marginStart="15.4dp"
+                android:layout_marginLeft="15.4dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="30dp"
+                android:elevation="0dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="23dp"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="15.4dp"
+                        android:layout_marginTop="15.4dp"
+                        android:lineSpacingExtra="2.8sp"
+                        android:text="DIGITAL COMMUNICATION"
+                        android:textStyle="bold"
+                        android:textScaleX="1.2"
+                        android:layout_marginStart="15.4dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textColor="@color/overlay_dark_30"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="15.4dp"
+                        android:layout_marginRight="15.4dp"
+                        android:layout_marginTop="15.4dp"
+                        android:lineSpacingExtra="2.6sp"
+                        android:text="Reconsider the need to visit,e.g. use mobile technology to connect insted"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="15.4dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/videocall" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </HorizontalScrollView>
+    </LinearLayout>
+</RelativeLayout>

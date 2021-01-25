@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1976D2</color>
+    <color name="colorAccent">#FDD835</color>
+    <color name="startColor">#780206</color>
+    <color name="endColor">#061161</color>
+    <color name="icstartColor">#ffc3a0</color>
+    <color name="icendColor">#FFAFBD</color>
+    <color name="white">#ffffff</color>
+    <color name="cv1">#E86B63</color>
+    <color name="black">#000000</color>
+    <color name="overlay_dark_30">#4D000000</color>
+
+    <color name="cases">#000000</color>
+    <color name="recovered">#006400</color>
+    <color name="deaths">#8B0000</color>
+    <color name="active">#191970</color>
+
+</resources>
