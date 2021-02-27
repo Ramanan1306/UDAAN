@@ -8,9 +8,6 @@
     android:weightSum="9"
     android:layout_height="match_parent"
     tools:context=".dopage">
-
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,7 +20,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="DO 's"
+            android:text="DO &amp; DONT"
             android:textStyle="bold"
             android:textColor="@color/black"
             android:textSize="30sp" />
@@ -31,7 +28,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="examples"
+            android:text="samples"
             android:textColor="@color/black"
             android:textSize="25sp" />
 
@@ -43,34 +40,36 @@
         android:background="@android:color/transparent"
         android:layout_marginTop="100dp">
 
-        <pl.droidsonroids.gif.GifImageView
-            android:id="@+id/gifImageView"
-            android:layout_height="200dp"
+        <TextView
             android:layout_width="match_parent"
-            android:src="@drawable/dogif"
+            android:layout_height="wrap_content"
+            android:text="DO'S"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"/>
 
-
-    <HorizontalScrollView
+        <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/scroller"
-        android:scrollbars="none">
+        android:scrollbars="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_gravity="bottom"
-            android:gravity="bottom"
+            android:layout_gravity="top"
+            android:gravity="top"
             android:layout_height="wrap_content">
             <androidx.cardview.widget.CardView
                 android:background="@color/cv1"
-                android:layout_width="250dp"
-                android:layout_height="300dp"
+                android:layout_width="180dp"
+                android:layout_height="220dp"
                 android:layout_marginStart="15.4dp"
                 android:layout_marginLeft="15.4dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginRight="10dp"
-                android:layout_marginTop="60dp"
+                android:layout_marginTop="40dp"
                 android:layout_marginBottom="30dp"
                 android:elevation="0dp"
                 app:cardCornerRadius="10dp"
@@ -91,7 +90,7 @@
                         android:text="WASHING HANDS"
                         android:textColor="@color/black"
                         android:textScaleX="1.2"
-                        android:textSize="23dp"
+                        android:textSize="15dp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -104,7 +103,7 @@
                         android:lineSpacingExtra="2.6sp"
                         android:text="Wash hands or use alcohol-based handrub before enteringand when leaving the patient's room"
                         android:textColor="#8f8f8f"
-                        android:textSize="20dp" />
+                        android:textSize="13dp" />
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -116,13 +115,13 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="250dp"
-                android:layout_height="300dp"
+                android:layout_width="180dp"
+                android:layout_height="220dp"
                 android:layout_marginStart="15.4dp"
                 android:layout_marginLeft="15.4dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginRight="10dp"
-                android:layout_marginTop="60dp"
+                android:layout_marginTop="40dp"
                 android:layout_marginBottom="30dp"
                 android:elevation="0dp"
                 app:cardCornerRadius="10dp"
@@ -135,7 +134,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="23dp"
+                        android:textSize="15dp"
                         android:textColor="@color/black"
                         android:layout_marginLeft="15.4dp"
                         android:layout_marginTop="15.4dp"
@@ -147,7 +146,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:textSize="13dp"
                         android:textColor="@color/overlay_dark_30"
                         android:layout_gravity="center"
                         android:layout_marginLeft="15.4dp"
@@ -167,13 +166,13 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="250dp"
-                android:layout_height="300dp"
+                android:layout_width="180dp"
+                android:layout_height="220dp"
                 android:layout_marginStart="15.4dp"
                 android:layout_marginLeft="15.4dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginRight="10dp"
-                android:layout_marginTop="60dp"
+                android:layout_marginTop="40dp"
                 android:layout_marginBottom="30dp"
                 android:elevation="0dp"
                 app:cardCornerRadius="10dp"
@@ -186,7 +185,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="23dp"
+                        android:textSize="15dp"
                         android:textColor="@color/black"
                         android:layout_marginLeft="15.4dp"
                         android:layout_marginTop="15.4dp"
@@ -198,7 +197,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:textSize="13dp"
                         android:textColor="#8f8f8f"
                         android:layout_gravity="center"
                         android:layout_marginLeft="15.4dp"
@@ -216,13 +215,13 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
-                android:layout_width="250dp"
-                android:layout_height="300dp"
+                android:layout_width="180dp"
+                android:layout_height="220dp"
                 android:layout_marginStart="15.4dp"
                 android:layout_marginLeft="15.4dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginRight="10dp"
-                android:layout_marginTop="60dp"
+                android:layout_marginTop="40dp"
                 android:layout_marginBottom="30dp"
                 android:elevation="0dp"
                 app:cardCornerRadius="10dp"
@@ -235,7 +234,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="23dp"
+                        android:textSize="15dp"
                         android:textColor="@color/black"
                         android:layout_marginLeft="15.4dp"
                         android:layout_marginTop="15.4dp"
@@ -247,7 +246,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:textSize="13dp"
                         android:textColor="@color/overlay_dark_30"
                         android:layout_gravity="center"
                         android:layout_marginLeft="15.4dp"
@@ -266,13 +265,13 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
-                android:layout_width="250dp"
-                android:layout_height="300dp"
+                android:layout_width="180dp"
+                android:layout_height="220dp"
                 android:layout_marginStart="15.4dp"
                 android:layout_marginLeft="15.4dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginRight="10dp"
-                android:layout_marginTop="60dp"
+                android:layout_marginTop="40dp"
                 android:layout_marginBottom="30dp"
                 android:elevation="0dp"
                 app:cardCornerRadius="10dp"
@@ -285,7 +284,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="23dp"
+                        android:textSize="15dp"
                         android:textColor="@color/black"
                         android:layout_marginLeft="15.4dp"
                         android:layout_marginTop="15.4dp"
@@ -297,7 +296,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="20dp"
+                        android:textSize="13dp"
                         android:textColor="@color/overlay_dark_30"
                         android:layout_gravity="center"
                         android:layout_marginLeft="15.4dp"
@@ -317,5 +316,238 @@
             </androidx.cardview.widget.CardView>
         </LinearLayout>
     </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DON'T"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardview"
+            android:layout_alignParentBottom="true"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="top"
+                android:gravity="top"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="180dp"
+                    android:layout_height="220dp"
+                    android:layout_marginStart="15.4dp"
+                    android:layout_marginLeft="15.4dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="30dp"
+                    android:elevation="0dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15dp"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="15.4dp"
+                            android:layout_marginTop="15.4dp"
+                            android:lineSpacingExtra="2.8sp"
+                            android:text="AVOID ROOM"
+                            android:layout_marginStart="15.4dp"
+                            android:textStyle="bold"
+                            android:scaleX="1"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13dp"
+                            android:textColor="#8f8f8f"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15.4dp"
+                            android:layout_marginRight="15.4dp"
+                            android:layout_marginTop="15.4dp"
+                            android:lineSpacingExtra="2.6sp"
+                            android:text="Do not sit on the patient's bed or on a chair inside the patient's room"
+                            />
+                        <ImageView
+                            android:id="@+id/avoidroom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="15.4dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/room"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:background="@color/cv1"
+                    android:layout_width="180dp"
+                    android:layout_height="220dp"
+                    android:layout_marginStart="15.4dp"
+                    android:layout_marginLeft="15.4dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="30dp"
+                    android:elevation="0dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15.4dp"
+                            android:layout_marginLeft="15.4dp"
+                            android:layout_marginTop="15.4dp"
+                            android:lineSpacingExtra="2.8sp"
+                            android:text="AVOID CONTACT"
+                            android:textColor="@color/black"
+                            android:textScaleX="1.2"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15.4dp"
+                            android:layout_marginTop="15.4dp"
+                            android:layout_marginRight="15.4dp"
+                            android:lineSpacingExtra="2.6sp"
+                            android:text="Do not touch,hug,kiss the patients"
+                            android:textColor="#8f8f8f"
+                            android:textSize="13dp" />
+
+                        <ImageView
+                            android:id="@+id/avoidcontact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="15.4dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/hugs" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="180dp"
+                    android:layout_height="220dp"
+                    android:layout_marginStart="15.4dp"
+                    android:layout_marginLeft="15.4dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="30dp"
+                    android:elevation="0dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15dp"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="15.4dp"
+                            android:layout_marginTop="15.4dp"
+                            android:lineSpacingExtra="2.8sp"
+                            android:text="AVOID RESTROOM"
+                            android:textStyle="bold"
+                            android:textScaleX="1.2"
+                            android:layout_marginStart="15.4dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13dp"
+                            android:textColor="@color/overlay_dark_30"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15.4dp"
+                            android:layout_marginRight="15.4dp"
+                            android:layout_marginTop="15.4dp"
+                            android:lineSpacingExtra="2.6sp"
+                            android:text="Do not use patient's toilet"
+                            />
+
+                        <ImageView
+                            android:id="@+id/avoidrestroom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="15.4dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/toilet" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="180dp"
+                    android:layout_height="220dp"
+                    android:layout_marginStart="15.4dp"
+                    android:layout_marginLeft="15.4dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="30dp"
+                    android:elevation="0dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15dp"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="15.4dp"
+                            android:layout_marginTop="15.4dp"
+                            android:lineSpacingExtra="2.8sp"
+                            android:text="AVOID FOODS"
+                            android:textStyle="bold"
+                            android:textScaleX="1.2"
+                            android:layout_marginStart="15.4dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="13dp"
+                            android:textColor="@color/overlay_dark_30"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15.4dp"
+                            android:layout_marginRight="15.4dp"
+                            android:layout_marginTop="15.4dp"
+                            android:lineSpacingExtra="2.6sp"
+                            android:text="Do not bring anything into or take anything out from the patient's room without checking with a healthcare worker"
+                            />
+
+                        <ImageView
+                            android:id="@+id/avoidfood"
+                            android:layout_width="340dp"
+                            android:layout_height="match_parent"
+                            android:layout_margin="15.4dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/avoidfood" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </HorizontalScrollView>
+
     </LinearLayout>
 </RelativeLayout>

@@ -1,11 +1,12 @@
 package com.example.dashboard_java;
 import java.io.Serializable;
 
+//linking api
 public class Model implements Serializable {
-    private String  country, cases, deaths, recovered, active, todayCases, todayDeath, incRec;
+    private String  country, cases, deaths, recovered, active, todayCases, todayDeath, incRec,flag;
 
     public  Model(String country, String cases, String deaths, String recovered,
-                  String active, String todayCases, String todayDeath, String incRec)
+                  String active, String todayCases, String todayDeath, String incRec,String flag)
     {
 
         this.country = country;
@@ -16,6 +17,7 @@ public class Model implements Serializable {
         this.todayCases = todayCases;
         this.todayDeath = todayDeath;
         this.incRec = incRec;
+        this.flag=flag;
     }
 
     public String getTodayCases()
@@ -96,6 +98,16 @@ public class Model implements Serializable {
     public void setActive(String active)
     {
         this.active = active;
+    }
+
+    public String getFlag()
+    {
+        return this.flag;
+    }
+
+    public void setUrl(String flag)
+    {
+        this.flag = flag;
     }
 
 }

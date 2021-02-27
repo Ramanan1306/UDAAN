@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Filter;
 import android.widget.Filterable;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -44,6 +45,7 @@ public class Adapter extends ArrayAdapter<Model> implements Filterable {
         TextView todayCases = view.findViewById(R.id.incactive);
         TextView inccured = view.findViewById(R.id.inccured);
         TextView todayDeaths = view.findViewById(R.id.incdeath);
+        TextView flag = view.findViewById(R.id.flag);
 
         // Adding Data to modellist
         country.setText(modelList.get(position).getCountry());
@@ -54,10 +56,12 @@ public class Adapter extends ArrayAdapter<Model> implements Filterable {
         todayCases.setText(modelList.get(position).getTodayCases());
         inccured.setText(modelList.get(position).getIncRec());
         todayDeaths.setText(modelList.get(position).getTodayDeath());
+        flag.setText(modelList.get(position).getFlag());
 
         return view;
     }
 
+    //search filter command
     @Override
     public int getCount() {
         return modelList.size();

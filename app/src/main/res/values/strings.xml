@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">UDAAN</string>
+    <string name="messageWithLink"><a href="https://www.google.com/">Tap here to open app</a></string>
 </resources>

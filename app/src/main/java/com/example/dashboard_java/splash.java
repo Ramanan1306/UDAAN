@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 
+//splash screen commands
 public class splash extends AppCompatActivity {
 
     @Override

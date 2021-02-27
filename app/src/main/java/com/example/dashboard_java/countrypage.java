@@ -1,7 +1,5 @@
 package com.example.dashboard_java;
 
-import android.app.SearchManager;
-import android.content.Context;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -23,11 +21,11 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
-public class searchpage extends AppCompatActivity {
+public class countrypage extends AppCompatActivity {
 
 	ListView listView;
 	Toolbar toolbar;
@@ -61,6 +59,8 @@ private void fetchData() {
                     JSONArray array = new JSONArray(response);
                     for (int i = 0; i < array.length(); i++) {
                         JSONObject object2 = array.optJSONObject(i);
+                        JSONObject object3 = object2.getJSONObject("countryInfo");
+                        String flag = object3.getString("flag");
 
 
                             String country = object2.getString("country");
@@ -73,13 +73,14 @@ private void fetchData() {
                             String confRec = object2.getString("recovered");
 
 
+
                             model = new Model(country, cases, deaths, recovered, active,
-                                    todayCases, todayDeaths, confRec);
+                                    todayCases, todayDeaths, confRec,flag);
                             // placing data into the app using AdapterClass
                             modelList.add(model);
 
 
-                            adapter = new Adapter(searchpage.this, modelList);
+                            adapter = new Adapter(countrypage.this, modelList);
                             listView.setAdapter(adapter);
                         }
 
@@ -92,7 +93,7 @@ private void fetchData() {
             @Override
             public void onErrorResponse(VolleyError error) {
                 // In case of error it will run
-                Toast.makeText(searchpage.this,"Turn on mobile data", Toast.LENGTH_SHORT).show();
+                Toast.makeText(countrypage.this,"Turn on mobile data", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -100,6 +101,7 @@ private void fetchData() {
         requestQueue.add(request);
     }
 
+    //search view commands
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main,menu);

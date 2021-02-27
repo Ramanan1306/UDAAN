@@ -4,10 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
-import android.widget.PopupMenu;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -25,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     TextView Cases, Active, Recovered, TotalDeaths;
 
 
-    private LinearLayout search, healthinfo, does, dont,feedback;
+    private LinearLayout search, healthinfo, does, dont;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,15 +34,7 @@ public class MainActivity extends AppCompatActivity {
             dont = findViewById(R.id.dont);
             search = findViewById(R.id.search);
             healthinfo = findViewById(R.id.healthinfo);
-            feedback = findViewById(R.id.feedback);
 
-            feedback.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(MainActivity.this,feedbackform.class);
-                    startActivity(intent);
-                }
-            });
 
             healthinfo.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -57,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
             search.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(MainActivity.this, searchpage.class);
+                    Intent intent = new Intent(MainActivity.this, countrypage.class);
                     startActivity(intent);
                 }
             });
@@ -73,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
             dont.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(MainActivity.this, dontpage.class);
+                    Intent intent = new Intent(MainActivity.this, more_pg.class);
                     startActivity(intent);
                 }
             });

@@ -42,13 +42,6 @@
         android:layout_marginTop="100dp"
         android:orientation="vertical">
 
-    <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/gifImageView"
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="10dp"
-        android:layout_height="150dp"
-        android:layout_width="match_parent"
-        android:src="@drawable/dont"/>
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

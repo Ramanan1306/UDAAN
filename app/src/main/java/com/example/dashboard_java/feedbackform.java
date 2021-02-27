@@ -24,7 +24,7 @@ public class feedbackform extends AppCompatActivity {
             public void onClick(View v) {
            Intent i=new Intent(Intent.ACTION_SEND);
            i.setType("message/html");
-           i.putExtra(Intent.EXTRA_EMAIL,new String("support@udaan.com"));
+           i.putExtra(Intent.EXTRA_EMAIL,new String[]{"support@udaan.com"});
            i.putExtra(Intent.EXTRA_SUBJECT,"Feedback Form");
            i.putExtra(Intent.EXTRA_TEXT,"Name : "+edit1.getText()+"\n Message : "+edit2.getText());
            try {
