@@ -30,10 +30,10 @@
                 android:layout_weight="1"
                 android:orientation="vertical">
 
-                <ImageView
+                <TextView
                     android:id="@+id/flag"
-                    android:layout_width="90dp"
-                    android:layout_height="55dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
                     android:textAlignment="center"
                     android:textColor="@color/black"/>
                 <!--Text view to display City name-->
